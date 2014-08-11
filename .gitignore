@@ -19,3 +19,4 @@ node_modules
 resources/bower_components
 .sass-cache
 .idea
+_output
