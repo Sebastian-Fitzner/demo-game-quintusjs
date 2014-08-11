@@ -2,7 +2,7 @@
 
 [Demo Page](http://demos.jci-werbeagentur.com/demo-game/)
 
-The Game is build with [Quintus JS}(http://html5quintus.com/).
+The Game is build with [Quintus JS](http://html5quintus.com/).
 Quintus is an easy-to-learn, fun-to-use JavaScript HTML5 game engine for mobile, desktop and beyond!
 
 ## Requirements
