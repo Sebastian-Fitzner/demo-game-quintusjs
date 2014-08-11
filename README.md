@@ -1,4 +1,4 @@
-# Demo Game
+# Demo Quintus JS Game
 
 [Demo Page](http://demos.jci-werbeagentur.com/demo-game/)
 
