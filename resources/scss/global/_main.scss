@@ -1,0 +1,224 @@
+/* ---------------------------------------------------
+Demo Styles - just delete them
+--------------------------------------------------- */
+
+body
+{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #333;
+    background: #f4f4f4;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+.masthead
+{
+    .container
+    {
+        float: left;
+    }
+}
+
+.navbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 20%;
+    height: 100%;
+
+    background: #222;
+    a
+    {
+        font-weight: normal;
+
+        display: block;
+
+        margin-bottom: 1px;
+        padding: .5em 1em;
+
+        text-align: right;
+        text-decoration: none;
+
+        color: #fff;
+        background: #444;
+        &:hover
+        {
+            color: #333;
+            background: yellowgreen;
+        }
+        &.navbar-brand
+        {
+            font-weight: bold;
+
+            display: block;
+
+            text-align: right;
+            text-transform: uppercase;
+
+            background: none;
+            &:hover
+            {
+                color: yellowgreen;
+            }
+        }
+    }
+    ul
+    {
+        margin: 1em 0;
+        padding: 0;
+    }
+    li
+    {
+        list-style: none;
+        &.active
+        {
+            a,
+            a:hover
+            {
+                color: #333;
+                background: yellowgreen;
+            }
+        }
+    }
+}
+
+h2
+{
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.4em;
+
+    clear: both;
+
+    margin: 1.5em 0 1em;
+
+    color: yellowgreen;
+}
+
+#main
+{
+    width: 60%;
+    margin-left: 25%;
+    h1
+    {
+        font-size: 150%;
+        font-weight: bold;
+
+        margin-top: 1em;
+        margin-bottom: .5em;
+
+        @include breakpoint(568px)
+        {
+            font-size: 100%;
+        }
+    }
+    img
+    {
+        max-width: 100%;
+        height: auto;
+        margin: 1em;
+    }
+    .teaser-img
+    {
+        text-align: center;
+        img
+        {
+            display: block;
+
+            margin: .5em auto;
+        }
+    }
+    ul
+    {
+        margin-top: 1em;
+        margin-left: 1em;
+        li
+        {
+            font-size: 100%;
+            line-height: 135%;
+
+            margin-left: 1em;
+
+            list-style: circle;
+
+            @include breakpoint(568px)
+            {
+                font-size: 100%;
+            }
+            a
+            {
+                text-decoration: none;
+
+                color: #666;
+            }
+        }
+    }
+}
+
+article
+{
+    position: relative;
+
+    clear: both;
+
+    margin-bottom: 1em;
+}
+
+/* Teaser
+
+Primary teaser styles
+
+Markup:
+<div class="teaser">
+    <h2>this is my title</h2>
+    <p>
+        This is just a demo content to show you how to integrate external data
+    </p>
+</div>
+
+.teaser - Standard class for teaser elements
+h2 - Displays h2 in teasers
+
+Styleguide 1
+*/
+.teaser
+{
+    float: left;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 30%;
+    margin: 0 3% 1em 0;
+    padding: .5em;
+
+    background: #d4d4d4;
+    h2
+    {
+        margin: .35em;
+
+        color: black;
+    }
+    &.green
+    {
+        color: #fff;
+        background: yellowgreen;
+    }
+    &.black
+    {
+        color: #fff;
+        background: #000;
+        h2
+        {
+            color: #fff;
+        }
+    }
+}
